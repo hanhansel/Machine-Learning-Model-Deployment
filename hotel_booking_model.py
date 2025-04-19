@@ -48,6 +48,5 @@ class HotelBookingModel:
     #Load PKL file saved from the python(ipynb) file
     def load_model(self, path='best_model.pkl'):
         print(f"Loading from {path}...")
-        with open(path, 'rb') as file:
-            self.model, self.ohe, self.le = pickle.load(file)
+        self.model, self.ohe, self.le = joblib.load(path)
         self.is_trained = True
