@@ -1,4 +1,5 @@
 import pickle
+import sklearn 
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
